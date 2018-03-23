@@ -14,6 +14,10 @@ type cell struct {
 }
 
 func main() {
+	if len(os.Args) != 2 {
+		fmt.Println("Execute with 1 argument: the brainfuck file path")
+		os.Exit(0)
+	}
 	filename := os.Args[1]
 	input, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -110,5 +114,5 @@ func main() {
 		}
 	}
 	fmt.Println()
-	fmt.Println("Success")
+	fmt.Println("--------------------\nSuccess")
 }
