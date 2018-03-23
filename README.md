@@ -9,5 +9,5 @@ $ go build
 ```
 3. To interpret a brainfuck file:
 ```
-./GoFuckYourBrain hw.bf
+./GoFuckYourBrain examples/HelloWorld.bf
 ```
